@@ -1,0 +1,89 @@
+.box-canvas{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  width: 600px;
+  height:600px;
+}
+.viewer {
+  position: absolute;
+  top: 0;
+  left: 42%;
+  width: 20%;
+  height: 45px;
+  background: #232F40;
+  border-radius: 10% 10% 0 0;
+}
+.viewer::after {
+  content: '';
+  background: gray;
+  position: absolute;
+  bottom: 15%;
+  left: 35%;
+  width: 35%;
+  height: 55%;
+  border-radius: 25%;
+}
+.camera-body {
+  position: absolute;
+  top: 45px;
+  left: 10%;
+  width: 600px;
+  height: 400px;
+  background: grey;
+  border-radius: 8%;
+  box-shadow: 8px 8px 8px rgb(109,107,107);
+}
+.camera-body::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 45px;
+  width: 45px;
+  height: 20px;
+  background: #C6214C;
+  border-radius: 25% 25% 0% 0%;
+}
+.camera-body::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(to top, 
+     black 40%, white  40% 60%, black 60% 80%, black 80%);
+  right: 0;
+  top: 48%;
+}
+.flash {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 80%;
+  top: 10%;
+  border-radius: 50%;
+  background: #fff;
+}
+.lens-main {
+  position: absolute;
+  background: #232F40;
+  height:75%;
+  width: 50%;
+  left: 20%;
+  top: 15%;
+  border-radius: 50%;
+  z-index: 2;
+  overflow: hidden;
+  border: 5px solid #344A5E;
+  box-shadow: 10px 10px 5px rgb(109,107,107);
+}
+.lens-inner {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 87%;
+  height: 85%;
+  background: #344A5E;
+  border-radius: 50%;
+}
